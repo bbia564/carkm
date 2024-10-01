@@ -10,7 +10,6 @@ class MileageSecondPage extends GetView<MileageSecondLogic> {
     final titles = [
       'Add transportation',
       'Clean all records',
-      'Privacy agreement',
       'About app'
     ];
     return Container(
@@ -35,9 +34,6 @@ class MileageSecondPage extends GetView<MileageSecondLogic> {
           controller.cleanMileageData();
           break;
         case 2:
-          controller.aboutMileagePrivacy(context);
-          break;
-        case 3:
           controller.aboutMileageApp(context);
           break;
       }
@@ -63,7 +59,6 @@ class MileageSecondPage extends GetView<MileageSecondLogic> {
                 _setItem(0, context),
                 _setItem(1, context),
                 _setItem(2, context),
-                _setItem(3, context),
               ].toColumn(
                   separator: Divider(
                 height: 15,
